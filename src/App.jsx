@@ -1,18 +1,18 @@
 import React from 'react';
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ProjectList from './components/ProjectList';
+import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <main className="flex-grow">
+    <div className="min-h-screen bg-bg-dark text-text-main selection:bg-primary selection:text-black">
+      <Navbar />
+      <main>
         <Hero />
         <ProjectList />
+        <Contact />
       </main>
-      
-      <footer className="py-8 text-center text-text-secondary text-sm glass-panel mt-10 rounded-none border-x-0 border-b-0">
-        <p>© {new Date().getFullYear()} Ahmed Elbahgy. Built with React & Vite.</p>
-      </footer>
     </div>
   );
 }
