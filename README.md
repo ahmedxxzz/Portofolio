@@ -1,16 +1,47 @@
-# React + Vite
+# Ahmed Elbahgy | Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance portfolio website built with **pure HTML, CSS, and JavaScript**. Designed to showcase my projects and skills with a premium "Deep Space" aesthetic.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [https://ahmedxxzz.github.io/Portofolio/](https://ahmedxxzz.github.io/Portofolio/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- **🎨 Premium UI/UX**: Custom dark theme with neon accents, glassmorphism effects, and smooth gradients.
+- **⚡ High Performance**: Built with Vanilla JS and CSS3—no heavy frameworks or build steps.
+- **🔄 Dynamic Content**: Automatically fetches and displays my latest repositories using the **GitHub API**.
+- **✨ Smooth Animations**: Intersection Observer-powered scroll reveals and floating background elements.
+- **📱 Fully Responsive**: Optimized experience for mobile, tablet, and desktop devices.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **HTML5**: Semantic structure.
+- **CSS3**: Custom properties (variables), Flexbox/Grid, Keyframe animations.
+- **JavaScript (ES6+)**: Async/Await for API calls, DOM manipulation, Intersection Observer.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 How to Run Locally
+
+Since this is a static site, no installation is required!
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/ahmedxxzz/Portofolio.git
+   ```
+2. **Open `index.html`** in your browser.
+   - For the best experience, use a local development server (e.g., Live Server in VS Code).
+
+## 📦 Deployment
+
+This project is configured to deploy automatically to **GitHub Pages** via GitHub Actions.
+
+- Any push to the `main` branch triggers the deployment workflow.
+- The site is served from the root directory.
+
+## 📬 Contact
+
+- **Email**: [ahmedtarekelbahgy@gmail.com](mailto:ahmedtarekelbahgy@gmail.com)
+- **GitHub**: [@ahmedxxzz](https://github.com/ahmedxxzz)
+- **LinkedIn**: [Ahmed Elbahgy](https://www.linkedin.com/in/ahmed-elbahgy-241a8a235/)
+
+---
+
+© 2025 Ahmed Elbahgy. All Rights Reserved.
