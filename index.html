@@ -1,13 +1,160 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portofolio</title>
+    <title>Ahmed Elbahgy | Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Ahmed Elbahgy, a passionate developer building modern web applications."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <!-- Background Elements -->
+    <div class="bg-noise"></div>
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="#" class="logo">Ahmed<span class="text-primary">.dev</span></a>
+
+        <div class="nav-links">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <div class="nav-socials">
+          <a
+            href="https://github.com/ahmedxxzz"
+            target="_blank"
+            aria-label="GitHub"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="#" aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+
+        <button class="mobile-toggle" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <a href="#home" class="mobile-link">Home</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container hero-container">
+        <div class="hero-content hidden-left">
+          <h2 class="greeting">Hello, I'm</h2>
+          <h1 class="name">Ahmed <span class="text-gradient">Elbahgy</span></h1>
+          <p class="bio">
+            A Python Developer with a strong foundation in <span class="highlight">Cybersecurity</span> (TCM Security certified). 
+            I transitioned from security to building robust <span class="highlight">Web & Desktop Applications</span>, 
+            and now specialize in advanced <span class="highlight">Web Scraping & Automation</span> solutions.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary"
+              >View Work <i class="fa-solid fa-arrow-right"></i
+            ></a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#projects" class="scroll-indicator">
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header hidden-up">
+          <h2 class="section-title">
+            Featured <span class="text-gradient">Projects</span>
+          </h2>
+          <p class="section-subtitle">
+            A collection of my open source contributions and personal projects.
+          </p>
+        </div>
+
+        <div id="projects-grid" class="projects-grid">
+          <!-- Projects will be injected here by JS -->
+          <div class="loader"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-content hidden-up">
+          <h2 class="section-title">
+            Let's <span class="text-gradient">Connect</span>
+          </h2>
+          <p class="section-subtitle">
+            I'm currently open to new opportunities and collaborations.
+          </p>
+
+          <div class="contact-card glass">
+            <a href="mailto:ahmedtarekelbahgy@gmail.com" class="contact-item">
+              <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+              <span>Email</span>
+            </a>
+            <a
+              href="https://github.com/ahmedxxzz"
+              target="_blank"
+              class="contact-item"
+            >
+              <div class="icon-box"><i class="fa-brands fa-github"></i></div>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/ahmed-elbahgy-241a8a235/" class="contact-item">
+              <div class="icon-box"><i class="fa-brands fa-linkedin"></i></div>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-container">
+        <p>
+          &copy; <span id="year"></span> Ahmed Elbahgy. Built with HTML, CSS &
+          JS.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
